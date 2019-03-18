@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FullnameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup.fragments.FragmentFullname">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingBottom="@dimen/launch_padding_left_right"
+        android:paddingEnd="@dimen/launch_padding_left_right"
+        android:paddingStart="@dimen/launch_padding_left_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtFullnameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light_font"
+            android:text="@string/str_whats_your_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_title_text_size"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/FullnameForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/signup_form_top_margin"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFullnameTitle">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/colorClickedBackground"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtFirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="@string/str_firstname"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorAccentDark"
+                    android:textSize="@dimen/input_text_size"
+                    app:backgroundTint="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLastname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/text_input_margin_top"
+                android:textColorHint="@color/colorClickedBackground"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtLastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_lastname"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorClickedBackground"
+                    android:textSize="@dimen/input_text_size"
+                    app:backgroundTint="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFullNameNext"
+            android:layout_width="@dimen/btn_login_signup_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_white_curved_radius"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/str_next"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/btn_get_started_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

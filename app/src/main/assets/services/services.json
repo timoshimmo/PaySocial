@@ -1,0 +1,21 @@
+ [
+	  {
+		  "CONTACT_TYPE" : "Customer",
+		  "CONTACT_OPEN_CLOSE" : "Closed",
+		  "CONTACT_FIRST_NAME" : "Tobi"
+	  },
+
+	  {
+		 "CONTACT_TYPE" : "Lead",
+		 "CONTACT_OPEN_CLOSE" : "Open",
+		 "CONTACT_FIRST_NAME" : "Nyemike"
+
+	  },
+
+	 {
+		 "CONTACT_TYPE" : "Lead",
+		 "CONTACT_OPEN_CLOSE" : "Open",
+		 "CONTACT_FIRST_NAME" : "Afam"
+	 }
+
+ ]

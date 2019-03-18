@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbarHeight"
+        android:background="@drawable/side_nav_bar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/home_top_layout_padding">
+
+            <TextView
+                android:id="@+id/txtTotalSpentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/str_total_spent"
+                android:textColor="@color/colorSuperLightGray"
+                android:textSize="@dimen/total_spent_title_text_size"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTotalSpentTitle">
+
+                <TextView
+                    android:id="@+id/txtTotSpentAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/str_test_amount"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tot_spent_value_text_size" />
+
+                <Space
+                    android:layout_width="@dimen/currentcy_horizontal_space"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txtCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_light_font"
+                    android:text="@string/str_ngn"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/total_spent_title_text_size" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/homeTab"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:tabTextAppearance="@style/TextAppearance.Design.Tab.MyTab">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemPayBills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strPayBills" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabItemHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_history" />
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".home.activity.MakePaymentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_mid_light_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMakePaymentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/make_payment_title_margin_top_bottom"
+                android:text="@string/str_make_payment_title"
+                android:textColor="@color/colorVeryDarkGray"
+                android:textSize="@dimen/home_title_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/paymentInputContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/make_payment_title_margin_top_bottom"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMakePaymentTitle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                    android:background="@drawable/top_bottom_border"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txtFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/str_fullname"
+                        android:inputType="textPersonName"
+                        android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                        android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                        android:textColor="@color/custom_dark_gray"
+                        android:textColorHint="@color/colorMidLightGray"
+                        android:textSize="@dimen/home_button_text_size" />
+
+                    <View
+                        android:id="@+id/email_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="@dimen/rb_margin_right"
+                        android:background="@color/customSuperLightBlueTheme" />
+
+                    <EditText
+                        android:id="@+id/txtEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/str_email_add"
+                        android:inputType="textEmailAddress"
+                        android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                        android:textColor="@color/custom_dark_gray"
+                        android:textColorHint="@color/colorMidLightGray"
+                        android:textSize="@dimen/home_button_text_size" />
+
+                    <View
+                        android:id="@+id/phone_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="@dimen/rb_margin_right"
+                        android:background="@color/customSuperLightBlueTheme" />
+
+                    <EditText
+                        android:id="@+id/txtPhoneNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/str_phone_no"
+                        android:inputType="phone"
+                        android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                        android:textColor="@color/custom_dark_gray"
+                        android:textColorHint="@color/colorMidLightGray"
+                        android:textSize="@dimen/home_button_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                    android:background="@drawable/top_bottom_border"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/btnSelectService"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                        android:text="@string/str_select_provider"
+                        android:textColor="@android:color/white">
+
+                        <EditText
+                            android:id="@+id/txtSelectedService"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.85"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:hint="@string/str_select_provider"
+                            android:inputType="text"
+                            android:textColor="@color/custom_dark_gray"
+                            android:textColorHint="@color/colorMidLightGray"
+                            android:textSize="@dimen/home_button_text_size" />
+
+                        <ImageView
+                            android:id="@+id/servicesRightArrow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            app:srcCompat="@drawable/ic_right_arrow" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/service_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="@dimen/rb_margin_right"
+                        android:background="@color/customSuperLightBlueTheme" />
+
+                    <EditText
+                        android:id="@+id/txtServiceIdNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/str_dynamic_value"
+                        android:inputType="number"
+                        android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                        android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                        android:textColor="@color/custom_dark_gray"
+                        android:textColorHint="@color/colorMidLightGray"
+                        android:textSize="@dimen/home_button_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                    android:background="@drawable/top_bottom_border"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txtPaymentAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/str_amt_to_pay"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                        android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                        android:textColor="@color/custom_dark_gray"
+                        android:textColorHint="@color/colorMidLightGray"
+                        android:textSize="@dimen/home_button_text_size" />
+
+                    <View
+                        android:id="@+id/bankpayment_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="@dimen/rb_margin_right"
+                        android:background="@color/customSuperLightBlueTheme" />
+
+                    <LinearLayout
+                        android:id="@+id/btnSelectBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                        android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                        android:text="@string/str_select_provider"
+                        android:textColor="@android:color/white">
+
+                        <EditText
+                            android:id="@+id/txtSelectedBank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:hint="@string/str_select_bank"
+                            android:inputType="text"
+                            android:textColor="@color/custom_dark_gray"
+                            android:textColorHint="@color/colorMidLightGray"
+                            android:textSize="@dimen/home_button_text_size" />
+
+
+                        <ImageView
+                            android:id="@+id/bankRightArrow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            app:srcCompat="@drawable/ic_right_arrow" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnCommunicationMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                    android:background="@drawable/top_bottom_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                    android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                    android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                    android:text="@string/str_select_provider"
+                    android:textColor="@android:color/white">
+
+                    <EditText
+                        android:id="@+id/txtCommunicationMethod"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/str_communication_method"
+                        android:inputType="text"
+                        android:textColor="@color/custom_dark_gray"
+                        android:textColorHint="@color/colorMidLightGray"
+                        android:textSize="@dimen/home_button_text_size" />
+
+
+                    <ImageView
+                        android:id="@+id/communicateRightArrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        app:srcCompat="@drawable/ic_right_arrow" />
+
+                </LinearLayout>
+
+             <!--   <Button
+                    android:id="@+id/btnCommunicationMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                    android:background="@drawable/themed_button"
+                    android:text="@string/str_communication_method"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/home_button_text_size" /> -->
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="@dimen/btn_submit_width"
+                    android:layout_height="@dimen/launch_button_container_height"
+                    android:layout_marginBottom="@dimen/transaction_code_tracker_margin_top"
+                    android:layout_marginTop="@dimen/button_padding"
+                    android:background="@drawable/btn_accent_curved_radius"
+                    android:text="@string/str_submit"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            <!--    <Button
+                    android:id="@+id/btnTransactionCodeTracker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/transaction_code_tracker_margin_top"
+                    android:background="@drawable/themed_button"
+                    android:text="@string/strTrCodeTracker"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/home_button_text_size" /> -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

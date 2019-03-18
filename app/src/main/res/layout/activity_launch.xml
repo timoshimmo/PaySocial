@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgWelcomeHandPhone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/str_welcome_hand_holding_phone_image"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hand_holding_mobile_phone" />
+
+    <ImageView
+        android:id="@+id/imgWelcomeBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.92"
+        android:contentDescription="@string/str_welcome_gradient_background_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/launch_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="@dimen/launch_padding_left_right"
+        android:paddingStart="@dimen/launch_padding_left_right">
+
+        <ImageView
+            android:id="@+id/imgLaunchLogo"
+            android:layout_width="@dimen/launch_icon_size"
+            android:layout_height="@dimen/launch_icon_size"
+            android:layout_marginTop="@dimen/start_image_top_margin"
+            android:contentDescription="@string/str_logo_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/exchange" />
+
+        <TextView
+            android:id="@+id/txtLaunchWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/txt_welcome_top_margin"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/str_pay_social"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLaunchLogo" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            style="@style/CustomCirclePageIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/page_indicator_margin_bottom"
+            android:padding="@dimen/indicator_padding"
+            app:layout_constraintBottom_toTopOf="@+id/buttonContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/launch_button_container_height"
+            android:layout_marginBottom="@dimen/btn_get_started_margin_bottom"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnGoToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:background="@drawable/btn_white_curved_radius"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/str_login"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/btn_get_started_text_size" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
+
+            <Button
+                android:id="@+id/btnGoToCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:background="@drawable/btn_transparent_curved_radius"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/str_signup"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_get_started_text_size" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

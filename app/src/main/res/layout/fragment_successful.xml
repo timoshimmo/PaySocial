@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".signup.fragments.FragmentSuccessful">
+
+    <ProgressBar
+        android:id="@+id/progressBarComplete"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingBottom="@dimen/launch_padding_left_right"
+        android:paddingEnd="@dimen/launch_padding_left_right"
+        android:paddingStart="@dimen/launch_padding_left_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtAccountCreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light_font"
+            android:text="@string/str_complete_signup"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_title_text_size"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCompleteSignupSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_input_margin_top"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/str_generated_userid"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAccountCreated" />
+
+        <TextView
+            android:id="@+id/txtgeneratedId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_thin_font"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_title_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCompleteSignupSubtitle" />
+
+
+        <Button
+            android:id="@+id/btnCompleteSignup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_white_curved_radius"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/str_complete"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/btn_get_started_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtgeneratedId" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

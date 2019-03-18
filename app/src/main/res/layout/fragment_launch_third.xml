@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/launch_padding_left_right"
+    android:paddingStart="@dimen/launch_padding_left_right"
+    tools:context=".launch.fragments.FragmentLaunchThird">
+
+    <LinearLayout
+        android:id="@+id/launch_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/start_image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/welcome_oval_icon_background"
+            android:orientation="vertical"
+            android:padding="@dimen/start_image_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/launch_desc_icon"
+                style="@style/circularImageViewStyle"
+                android:layout_width="@dimen/start_image_size"
+                android:layout_height="@dimen/start_image_size"
+                android:contentDescription="@string/lauch_img_icon_desc"
+                app:srcCompat="@drawable/launch_topup" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/launch_desc_left_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLaunchTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/txt_launch_title_margin_bottom"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/str_buy_airtime_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/launch_title_text_size" />
+
+            <TextView
+                android:id="@+id/txtLaunchSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/str_topup_subtitle"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_get_started_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

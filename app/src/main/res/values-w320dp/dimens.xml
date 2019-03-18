@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global Dimensions -->
+    <dimen name="btn_margin_start_end">20dp</dimen>
+    <dimen name="btn_curve_radius">20dp</dimen>
+
+    <!-- Launch Page Dimensions -->
+    <dimen name="start_image_top_margin">40dp</dimen>
+    <dimen name="start_image_padding">10dp</dimen>
+    <dimen name="start_image_size">35dp</dimen>
+    <dimen name="page_indicator_radius">4dp</dimen>
+    <dimen name="page_indicator_margin_bottom">15dp</dimen>
+    <dimen name="btn_get_started_margin_bottom">50dp</dimen>
+    <dimen name="btn_get_started_text_size">15sp</dimen>
+    <dimen name="start_title_text_size">24sp</dimen>
+    <dimen name="start_desc_top_margin">15dp</dimen>
+    <dimen name="start_desc_text_size">16sp</dimen>
+    <dimen name="launch_padding_left_right">20dp</dimen>
+    <dimen name="launch_icon_size">65dp</dimen>
+    <dimen name="welcome_text_size">30sp</dimen>
+    <dimen name="txt_welcome_top_margin">6dp</dimen>
+    <dimen name="btn_launch_login_signup_width">200dp</dimen>
+    <dimen name="launch_button_container_height">45dp</dimen>
+    <dimen name="launch_desc_container_margin_bottom">155dp</dimen>
+    <dimen name="launch_desc_left_margin">6dp</dimen>
+    <dimen name="txt_launch_title_margin_bottom">3dp</dimen>
+    <dimen name="launch_title_text_size">18sp</dimen>
+
+
+    <!-- Login Dimension-->
+    <dimen name="login_form_top_margin">10dp</dimen>
+    <dimen name="input_text_size">16sp</dimen>
+    <dimen name="zero_value">0dp</dimen>
+    <dimen name="btn_login_signup_width">120dp</dimen>
+    <dimen name="signup_title_text_size">26sp</dimen>
+    <dimen name="signup_form_top_margin">20dp</dimen>
+    <dimen name="text_input_margin_top">10dp</dimen>
+    <dimen name="btn_login_margin_top">15dp</dimen>
+    <dimen name="login_appbar_layout_height">120dp</dimen>
+    <dimen name="forgot_pass_text_size">15sp</dimen>
+
+    <!-- Home Page Dimensions -->
+    <dimen name="home_intro_height">160dp</dimen>
+    <dimen name="home_bottom_container_padding">30dp</dimen>
+    <dimen name="home_title_text_size">17sp</dimen>
+    <dimen name="txt_title_margin_bottom">20dp</dimen>
+    <dimen name="button_padding">10dp</dimen>
+    <dimen name="home_bottom_container_padding_left_right">50dp</dimen>
+    <dimen name="home_icon_size">30dp</dimen>
+    <dimen name="button_padding_left_right">25dp</dimen>
+    <dimen name="home_button_width">100dp</dimen>
+    <dimen name="home_button_text_size">15sp</dimen>
+    <dimen name="userid_container_padding">5dp</dimen>
+    <dimen name="nav_button_height">40dp</dimen>
+    <dimen name="nav_top_bar_height">210dp</dimen>
+    <dimen name="nav_bar_width">270dp</dimen>
+    <dimen name="intro_slogan_title_text_size">14sp</dimen>
+    <dimen name="intro_slogan_sub_text_size">10sp</dimen>
+    <dimen name="social_media_icons_size">25dp</dimen>
+    <dimen name="make_payment_title_margin_top_bottom">10dp</dimen>
+    <dimen name="form_edit_text_padding_top_bottom">12dp</dimen>
+    <dimen name="transaction_code_tracker_margin_top">20dp</dimen>
+    <dimen name="appbarHeight">187dp</dimen>
+    <dimen name="home_top_layout_padding">10dp</dimen>
+    <dimen name="total_spent_title_text_size">16sp</dimen>
+    <dimen name="tot_spent_value_text_size">24sp</dimen>
+    <dimen name="currentcy_horizontal_space">5dp</dimen>
+    <dimen name="home_row_icon_padding">15dp</dimen>
+    <dimen name="card_padding_top_bottom">7dp</dimen>
+    <dimen name="row_padding_left">5dp</dimen>
+    <dimen name="rb_margin_right">10dp</dimen>
+    <dimen name="right_arrow_size">17dp</dimen>
+    <dimen name="confirmation_top_margin">10dp</dimen>
+    <dimen name="btn_submit_width">200dp</dimen>
+    <dimen name="history_content_margin_bottom">5dp</dimen>
+    <dimen name="history_content_row_padding_top_bottom">10dp</dimen>
+    <dimen name="btn_logout_padding">3dp</dimen>
+    <dimen name="transfer_value_margin_top">30dp</dimen>
+    <dimen name="transfer_details_top_header_icon_size">15dp</dimen>
+    <dimen name="track_transaction_size">45dp</dimen>
+    <dimen name="btn_logout_padding_start">85dp</dimen>
+    <dimen name="btn_logout_icon_padding">-85dp</dimen>
+
+</resources>

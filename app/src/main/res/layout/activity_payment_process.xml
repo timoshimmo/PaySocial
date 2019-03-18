@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.activity.ConfirmPaymentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_mid_light_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/make_payment_title_margin_top_bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/transaction_code_tracker_margin_top">
+
+            <TextView
+                android:id="@+id/txtConfirmPaymentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/make_payment_title_margin_top_bottom"
+                android:layout_marginTop="@dimen/make_payment_title_margin_top_bottom"
+                android:text="@string/str_make_payment_title"
+                android:textColor="@color/colorVeryDarkGray"
+                android:textSize="@dimen/home_title_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/fullNameValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                android:background="@drawable/top_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                android:text="@string/str_select_provider"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtFullnameTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/str_fullname"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+
+                <TextView
+                    android:id="@+id/txtFullnameResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/custom_mid_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emailAddValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                android:background="@drawable/top_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                android:text="@string/str_select_provider"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtEmailTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/str_email_only"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+
+                <TextView
+                    android:id="@+id/txtEmailResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/custom_mid_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phoneNoValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                android:background="@drawable/top_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                android:text="@string/str_select_provider"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtphoneNoTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/str_phone_num"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+
+                <TextView
+                    android:id="@+id/txtphoneNoResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/custom_mid_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/serviceProviderValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                android:background="@drawable/top_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                android:text="@string/str_select_provider"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtServiceProvider"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/str_service_provider"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+
+                <TextView
+                    android:id="@+id/txtServiceResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/custom_mid_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/serviceNumValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                android:background="@drawable/top_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                android:text="@string/str_select_provider"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtServiceNoTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/str_service_id_title"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+
+                <TextView
+                    android:id="@+id/txtServiceNoResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/custom_mid_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/amtPayValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                android:background="@drawable/top_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                android:text="@string/str_select_provider"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtamtPayTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/str_amt"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+
+                <TextView
+                    android:id="@+id/txtamtPayResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/custom_mid_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bankValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                android:background="@drawable/top_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                android:text="@string/str_select_provider"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtBankTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/str_bank"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+
+                <TextView
+                    android:id="@+id/txtBankResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/custom_mid_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/commValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                android:background="@drawable/top_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                android:text="@string/str_select_provider"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtCommChannelTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/str_comm_channel"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+
+                <TextView
+                    android:id="@+id/txtCommChanelResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/custom_mid_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/useridValue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/nav_button_container_top_margin"
+                android:background="@drawable/top_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/form_edit_text_padding_top_bottom"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingTop="@dimen/form_edit_text_padding_top_bottom"
+                android:text="@string/str_select_provider"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:id="@+id/txtUserIdTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/strHintUserId"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+
+                <EditText
+                    android:id="@+id/txtUserIdResult"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_enter_userid"
+                    android:inputType="number"
+                    android:textColor="@color/custom_mid_gray"
+                    android:textColorHint="@color/colorMidLightGray"
+                    android:textSize="@dimen/home_button_text_size" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnConfirmPayment"
+                android:layout_width="@dimen/btn_submit_width"
+                android:layout_height="@dimen/launch_button_container_height"
+                android:layout_marginBottom="@dimen/transaction_code_tracker_margin_top"
+                android:layout_marginTop="@dimen/button_padding"
+                android:background="@drawable/btn_accent_curved_radius"
+                android:text="@string/str_continue"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_button_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBarConfirmUserId"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

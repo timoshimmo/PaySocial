@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1da1f2</color>
+    <color name="colorPrimaryDark">#1676B1</color>
+    <color name="colorAccent">#082C42</color>
+    <color name="colorAccentDark">#030F16</color>
+    <color name="colorLightGreen">#4db6ac</color>
+    <color name="colorVeryLightGreen">#73C5BE</color>
+    <color name="colorMidLightGreen">#65d5ca</color>
+    <color name="colorClickedBackground">#D1D1D1</color>
+    <color name="custom_dark_gray">#3c4141</color>
+    <color name="custom_mid_gray">#696969</color>
+    <color name="colorAccentOld">#548235</color>
+    <color name="colorAccentDarkOld">#44692b</color>
+    <color name="colorRuby">#004777</color>
+    <color name="colorBlueGray">#657786</color>
+    <color name="colorMidLightGray">#aab8c2</color>
+    <color name="colorLightGray">#e1e8ed</color>
+    <color name="colorSuperLightGray">#f5f8fa</color>
+    <color name="colorVeryDarkGray">#14171a</color>
+    <color name="colorSuperDarkGray">#1a1716</color>
+    <color name="colorMidDarkGray">#232323</color>
+    <color name="colorDarkGray">#3c4141</color>
+    <color name="custom_mid_light_gray">#ebf0f0</color>
+    <color name="colorWhiteOpacity">#80ffffff</color>
+    <color name="customSuperLightBlueTheme">#cdd2d4</color>
+    <color name="colorVeryDarkBlue">#1676B1</color>
+    <color name="colorRed">#E80000</color>
+    <color name="colorDarkRed">#A30000</color>
+    <color name="colorOrange">#FF2500</color>
+    <color name="colorGoGreen">#149101</color>
+
+
+</resources>
